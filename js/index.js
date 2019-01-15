@@ -9,14 +9,15 @@ $(".spellsFull").click(function(){
     $(".spells").show()
     $(".charms").show()
 })
-$( ".charms" ).click(function() {
+$(document).on("click",".charms",function(){
     string=this.id+"charmFull"
-    $("#charmFullList").show()
-    $("#"+string).show()
-    $(".charms").hide()
-    $(".spells").hide()
-});
-$(".charmFull").click(function(){
+        $("#charmFullList").show()
+        $("#"+string).show()
+        $(".charms").hide()
+        $(".spells").hide()
+})
+$(document).on("click",".charmFull",function(){
+    string=this.id+"charmFull"
     $("#"+this.id).hide()
     $(".charms").show()
     $(".spells").show()
@@ -41,7 +42,7 @@ function addNewCharm(){
         if(charmFull!==null){
             cntCharms++
             $("#charmsList").append("<div id=\"c10\" class=\"charms\" >"+charmName+"</div>")
-           $("#charmFullList").append("<div id=\"c10charmFull\" class=\"charmFull\" >"+charmName+"</div>") 
+           $("#charmFullList").append("<div id=\"c10charmFull\" class=\"charmFull\" >"+charmFull+"</div>") 
         }
     }
 }
