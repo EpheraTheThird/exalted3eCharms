@@ -1,0 +1,28 @@
+.spellsFull{
+    display: none;
+    background-color: palevioletred
+    border: solid 1px
+}
+#titleSpell{
+    font-size: 15px;
+    background-color: violet
+}
+#titleCharm{
+    font-size: 15px;
+    background-color: violet
+}
+.spells{
+    font-size: 8px;
+    background-color: azure;
+    border: solid 1px
+}
+.charms{
+    font-size: 8px;
+    background-color: azure;
+    border: solid 1px
+}
+.charmFull{
+    display: none;
+    background-color: palevioletred;
+    border: solid 1px
+}
